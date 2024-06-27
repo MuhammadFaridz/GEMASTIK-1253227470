@@ -12,3 +12,4 @@ seaborn
 matplotlib 
 tensorflow
 keras
+torch
