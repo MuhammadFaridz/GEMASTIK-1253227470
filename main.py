@@ -1,10 +1,14 @@
+import sys
 import subprocess
+
+# Path ke pip yang sesuai dengan lingkungan Python Anda
+pip_path = sys.executable.replace('python', 'pip')
 
 # Paket yang ingin diinstal
 package_name = 'torch'
 
 # Jalankan perintah pip install
-subprocess.check_call(['pip', 'install', package_name])
+subprocess.check_call([pip_path, 'install', package_name])
 
 #streamlit library
 import streamlit as st
