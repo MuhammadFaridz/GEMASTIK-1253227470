@@ -1,5 +1,3 @@
-import subprocess
-subprocess.check_call(['pip', 'install', '--upgrade', 'tensorflow'])
 #streamlit library
 import streamlit as st
 import streamlit.components.v1 as components
@@ -7,7 +5,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 import re
 import joblib
-from tensorflow.keras.models import load_model
+#from tensorflow.keras.models import load_model
 #visualization library
 import plotly.express as px
 import plotly.graph_objects as go
