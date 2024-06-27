@@ -1,3 +1,11 @@
+import subprocess
+
+# Paket yang ingin diinstal
+package_name = 'torch'
+
+# Jalankan perintah pip install
+subprocess.check_call(['pip', 'install', package_name])
+
 #streamlit library
 import streamlit as st
 import streamlit.components.v1 as components
