@@ -274,9 +274,9 @@ elif selected=="Application":
         method = st.radio('Recommendation Method:',['Collaborative Filtering', 'Content-Based Filtering'],horizontal=True, label_visibility='collapsed')
     
         # Load the model
-    from keras.models import load_model
+    #from keras.models import load_model
     model = load_model('recommender_model.h5')
-    from tensorflow.keras.models import load_model
+
 
     #model = joblib.load('recommender_model.pkl')
 
