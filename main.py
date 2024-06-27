@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 import re
 import joblib
-from tensorflow.keras.models import load_model
+#from tensorflow.keras.models import load_model
 #visualization library
 import plotly.express as px
 import plotly.graph_objects as go
@@ -274,9 +274,9 @@ elif selected=="Application":
     
         # Load the model
     from keras.models import load_model
-    model = load_model('recommender_model.h5')
+    #model = load_model('recommender_model.h5')
 
-    #model = joblib.load('recommender_model.pkl')
+    model = joblib.load('recommender_model.pkl')
 
     if method == "Collaborative Filtering":
         col1, col2 = st.columns([1, 4])
