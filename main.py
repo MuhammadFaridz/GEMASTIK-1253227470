@@ -1,15 +1,3 @@
-import sys
-import subprocess
-
-# Path ke pip yang sesuai dengan lingkungan Python Anda
-pip_path = sys.executable.replace('python', 'pip')
-
-# Paket yang ingin diinstal
-package_name = 'torch'
-
-# Jalankan perintah pip install
-subprocess.check_call([pip_path, 'install', package_name])
-
 #streamlit library
 import streamlit as st
 import streamlit.components.v1 as components
@@ -287,7 +275,8 @@ elif selected=="Application":
     
         # Load the model
     from keras.models import load_model
-    model = torch.load('recommender_model.h5')
+    model = load_model('recommender_model.h5')
+    from tensorflow.keras.models import load_model
 
     #model = joblib.load('recommender_model.pkl')
 
