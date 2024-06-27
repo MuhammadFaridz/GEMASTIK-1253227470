@@ -274,7 +274,7 @@ elif selected=="Application":
     
         # Load the model
     #from keras.models import load_model
-    model = load_model('recommender_model.h5')
+    #model = load_model('recommender_model.h5')
 
 
     #model = joblib.load('recommender_model.pkl')
