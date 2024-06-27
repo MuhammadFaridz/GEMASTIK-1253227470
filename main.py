@@ -1,3 +1,14 @@
+import subprocess
+
+def upgrade_tensorflow():
+    try:
+        subprocess.check_call(['pip', 'install', '--upgrade', 'tensorflow'])
+        print("TensorFlow successfully upgraded!")
+    except subprocess.CalledProcessError as e:
+        print(f"Failed to upgrade TensorFlow: {e}")
+
+if __name__ == "__main__":
+    upgrade_tensorflow()
 #streamlit library
 import streamlit as st
 import streamlit.components.v1 as components
