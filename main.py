@@ -19,6 +19,10 @@ import seaborn as sns
 import pandas as pd
 import numpy as np
 
+
+print("Versi TensorFlow:", tf.__version__)
+print("Versi Keras:", keras.__version__)
+
 #load model
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
